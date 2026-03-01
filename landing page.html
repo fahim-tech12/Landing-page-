@@ -1,260 +1,688 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Earn Rewards Easily - Trusted U.S. Offers</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9fafb;
-            color: #333;
-            line-height: 1.6;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        header {
-            background-color: #ffffff;
-            padding: 60px 0;
-            text-align: center;
-            border-bottom: 1px solid #e5e7eb;
-        }
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            color: #1f2937;
-        }
-        p {
-            font-size: 1.1rem;
-            margin-bottom: 30px;
-        }
-        .cta-button {
-            background-color: #10b981;
-            color: white;
-            padding: 15px 30px;
-            border: none;
-            border-radius: 5px;
-            font-size: 1.1rem;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-block;
-        }
-        .cta-button:hover {
-            background-color: #059669;
-        }
-        section {
-            padding: 60px 0;
-            text-align: center;
-        }
-        .trust-section {
-            background-color: #ffffff;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-        .trust-item {
-            flex: 1 1 300px;
-            margin: 20px;
-        }
-        .trust-icon {
-            font-size: 2rem;
-            margin-bottom: 10px;
-            color: #3b82f6;
-        }
-        .benefits-section {
-            background-color: #f9fafb;
-        }
-        .benefits-list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-        .benefit-item {
-            flex: 1 1 300px;
-            margin: 20px;
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        .how-section {
-            background-color: #ffffff;
-        }
-        .steps {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-        .step {
-            flex: 1 1 300px;
-            margin: 20px;
-            text-align: left;
-        }
-        .step-number {
-            font-size: 2rem;
-            color: #3b82f6;
-            margin-bottom: 10px;
-        }
-        .social-proof {
-            background-color: #f9fafb;
-        }
-        .testimonial {
-            margin: 20px auto;
-            max-width: 600px;
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        .final-cta {
-            background-color: #ffffff;
-            padding: 60px 0;
-            text-align: center;
-        }
-        footer {
-            background-color: #f9fafb;
-            padding: 20px 0;
-            text-align: center;
-            font-size: 0.9rem;
-            color: #6b7280;
-        }
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2rem;
-            }
-            .trust-item, .benefit-item, .step {
-                flex: 1 1 100%;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>MAKING MONEY · premium mobile experiences</title>
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #0a0a0a;
+      color: #e0e0e0;
+      font-family: 'Inter', sans-serif;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* GOLD accents */
+    .gold {
+      color: #D4AF37;
+    }
+    hr.gold-divider {
+      border: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #D4AF37, #D4AF37, #D4AF37, transparent);
+      width: 180px;
+      margin: 24px 0 32px 0;
+    }
+
+    /* buttons */
+    .btn-gold {
+      display: inline-block;
+      background: #D4AF37;
+      color: #0a0a0a;
+      font-weight: 600;
+      padding: 16px 42px;
+      border-radius: 48px;
+      text-decoration: none;
+      letter-spacing: 0.5px;
+      border: 1px solid #D4AF37;
+      transition: all 0.3s ease;
+      font-size: 1.2rem;
+      box-shadow: 0 8px 20px rgba(212, 175, 55, 0.15);
+    }
+    .btn-gold:hover {
+      background: transparent;
+      color: #D4AF37;
+      box-shadow: 0 8px 30px rgba(212, 175, 55, 0.4);
+      transform: scale(1.02);
+    }
+    .btn-gold i {
+      transition: transform 0.2s;
+    }
+    .btn-gold:hover i {
+      transform: translateX(4px);
+    }
+
+    /* header */
+    .header {
+      background: #0a0a0a;
+      padding: 20px 0;
+      border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(4px);
+    }
+    .header .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      font-weight: 900;
+      color: #D4AF37;
+      letter-spacing: -0.5px;
+      text-decoration: none;
+    }
+    .nav {
+      display: flex;
+      gap: 32px;
+      font-weight: 500;
+    }
+    .nav a {
+      color: #ccc;
+      text-decoration: none;
+      transition: color 0.2s;
+      font-size: 1rem;
+    }
+    .nav a:hover {
+      color: #D4AF37;
+    }
+
+    /* hero */
+    .hero {
+      padding: 60px 0 40px;
+    }
+    .hero-grid {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .hero-content {
+      flex: 1 1 400px;
+    }
+    .hero-content h1 {
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 700;
+      line-height: 1.1;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+    .hero-content .subhead {
+      font-size: 1.3rem;
+      font-weight: 300;
+      color: #bbb;
+      max-width: 600px;
+    }
+    .hero-mockup {
+      flex: 1 1 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .device-mockup {
+      width: 280px;
+      height: 540px;
+      background: #151515;
+      border-radius: 48px;
+      border: 2px solid #D4AF37;
+      box-shadow: 0 30px 40px -20px rgba(212, 175, 55, 0.3), 0 0 0 2px rgba(212,175,55,0.1) inset, 0 0 40px #D4AF37;
+      position: relative;
+      overflow: hidden;
+      transform: perspective(800px) rotateY(-2deg) rotateX(2deg);
+      transition: transform 0.4s;
+    }
+    .device-mockup:hover {
+      transform: perspective(800px) rotateY(0deg) rotateX(0deg);
+    }
+    .device-screen {
+      width: 100%;
+      height: 100%;
+      background-image: url('https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+    .reflection {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, rgba(255,255,255,0.15) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    /* demo visual */
+    .demo {
+      padding: 80px 0;
+    }
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 16px;
+    }
+    .demo-grid {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 40px;
+    }
+    .demo-card {
+      flex: 1 1 200px;
+      max-width: 280px;
+      border: 2px solid #D4AF37;
+      border-radius: 32px;
+      padding: 20px 12px 24px;
+      background: #111;
+      transition: all 0.3s;
+    }
+    .demo-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 30px -10px #D4AF37;
+    }
+    .demo-image {
+      border-radius: 24px;
+      height: 240px;
+      overflow: hidden;
+      border: 1px solid #D4AF37;
+    }
+    .demo-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .demo-caption {
+      text-align: center;
+      margin-top: 16px;
+      font-style: italic;
+      color: #D4AF37;
+      font-weight: 300;
+    }
+
+    /* features */
+    .features {
+      padding: 60px 0;
+      background: #0c0c0c;
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 32px;
+      margin-top: 40px;
+    }
+    .feature-card {
+      background: #111;
+      border: 1px solid #2a2a2a;
+      border-radius: 24px;
+      padding: 32px 24px;
+      text-align: center;
+      transition: border 0.2s;
+    }
+    .feature-card:hover {
+      border-color: #D4AF37;
+    }
+    .feature-icon {
+      font-size: 2.5rem;
+      color: #D4AF37;
+      margin-bottom: 20px;
+    }
+    .feature-card h3 {
+      color: #fff;
+      margin-bottom: 12px;
+      font-size: 1.5rem;
+    }
+    .feature-card p {
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+
+    /* how it works */
+    .how-it-works {
+      padding: 70px 0;
+    }
+    .steps {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 40px;
+    }
+    .step {
+      flex: 1 1 200px;
+      text-align: center;
+    }
+    .step-number {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.8rem;
+      font-weight: 700;
+      color: #D4AF37;
+      line-height: 1;
+      opacity: 0.8;
+      margin-bottom: 8px;
+    }
+    .step p {
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: #ddd;
+    }
+
+    /* why choose us */
+    .why-choose {
+      padding: 60px 0;
+      background: #0a0a0a;
+      border-top: 1px solid rgba(212,175,55,0.3);
+      border-bottom: 1px solid rgba(212,175,55,0.3);
+    }
+    .why-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 48px;
+      list-style: none;
+      margin-top: 30px;
+    }
+    .why-list li {
+      color: #fff;
+      font-size: 1.25rem;
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .why-list li i {
+      color: #D4AF37;
+      font-size: 1.8rem;
+    }
+
+    /* trust */
+    .trust {
+      padding: 60px 0;
+    }
+    .trust-emblem {
+      border: 2px solid #D4AF37;
+      border-radius: 80px;
+      padding: 16px 36px;
+      display: inline-block;
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #D4AF37;
+      margin-bottom: 40px;
+    }
+    .trust-icons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 48px;
+      font-size: 2rem;
+      color: #D4AF37;
+      margin: 40px 0 20px;
+    }
+    .trust-icons div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      font-size: 1rem;
+      color: #ccc;
+    }
+    .micro-text {
+      color: #888;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+    }
+
+    /* cta section */
+    .cta-section {
+      padding: 80px 0;
+    }
+    .cta-box {
+      border: 2px solid #D4AF37;
+      border-radius: 64px;
+      padding: 60px 30px;
+      text-align: center;
+      background: rgba(10,10,10,0.8);
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .cta-box h2 {
+      font-size: 2.8rem;
+      color: #fff;
+      margin-bottom: 32px;
+    }
+
+    /* FAQ */
+    .faq {
+      padding: 60px 0;
+      background: #0c0c0c;
+    }
+    .faq-item {
+      border-bottom: 1px solid #D4AF37;
+      margin-bottom: 20px;
+    }
+    details {
+      width: 100%;
+    }
+    summary {
+      font-size: 1.3rem;
+      font-weight: 500;
+      color: #fff;
+      padding: 20px 0;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    summary::-webkit-details-marker {
+      display: none;
+    }
+    summary::after {
+      content: '\f078';
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+      color: #D4AF37;
+      font-size: 1rem;
+      transition: transform 0.2s;
+    }
+    details[open] summary::after {
+      transform: rotate(180deg);
+    }
+    .faq-answer {
+      padding: 0 0 20px 20px;
+      color: #bbb;
+    }
+
+    /* footer */
+    .footer {
+      background: #050505;
+      padding: 40px 0 20px;
+      border-top: 1px solid #D4AF37;
+    }
+    .footer .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    .footer-copy {
+      color: #D4AF37;
+      font-size: 0.95rem;
+    }
+    .disclaimer {
+      color: #777;
+      font-size: 0.8rem;
+      max-width: 700px;
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    /* smart link display */
+    .smartlink-display {
+      color: #D4AF37;
+      font-size: 0.7rem;
+      opacity: 0.7;
+      word-break: break-all;
+      margin-top: 10px;
+    }
+    .smartlink-display a {
+      color: #D4AF37;
+      text-decoration: underline;
+    }
+
+    /* mobile */
+    @media (max-width: 768px) {
+      .header .container {
+        flex-direction: column;
+        gap: 16px;
+      }
+      .nav {
+        gap: 24px;
+      }
+      .hero-content h1 {
+        font-size: 2.5rem;
+      }
+      .device-mockup {
+        width: 220px;
+        height: 440px;
+      }
+      .trust-emblem {
+        font-size: 1.3rem;
+        padding: 12px 24px;
+      }
+      .trust-icons {
+        gap: 24px;
+      }
+      .cta-box h2 {
+        font-size: 2rem;
+      }
+      .btn-gold {
+        padding: 14px 32px;
+      }
+    }
+    @media (max-width: 480px) {
+      .container {
+        padding: 0 16px;
+      }
+      .nav {
+        gap: 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .step-number {
+        font-size: 3rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header class="hero-section">
-        <div class="container">
-            <h1>Earn Rewards Easily with Trusted U.S. Offers</h1>
-            <p>Get paid quickly for completing simple tasks and surveys tailored for Americans.</p>
-            <a href="https://singingfiles.com/show.php?l=0&u=2466185&id=73209" class="cta-button">Get Started</a>
-        </div>
-    </header>
-    <header class="hero-section">
-        <div class="container">
-            <h1>Earn Rewards Easily with Trusted U.S. Offers</h1>
-            <p>Get paid quickly for completing simple tasks and surveys tailored for Americans.</p>
-            <a href="https://singingfiles.com/show.php?l=0&u=2466185&id=72939" class="cta-button">Get Started</a>
-        </div>
-    </header>
-    <header class="hero-section">
-        <div class="container">
-            <h1>Earn Rewards Easily with Trusted U.S. Offers</h1>
-            <p>Get paid quickly for completing simple tasks and surveys tailored for Americans.</p>
-            <a href="https://singingfiles.com/show.php?l=0&u=2466185&id=72584" class="cta-button">Get Started</a>
-        </div>
-    </header>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="#" class="logo">MAKING MONEY</a>
+      <nav class="nav">
+        <a href="#">Home</a>
+        <a href="#">Features</a>
+        <a href="#">Support</a>
+      </nav>
+    </div>
+  </header>
 
-    <section class="trust-section">
-        <div class="container">
-            <h2>Why Trust Us?</h2>
-            <div class="trust-items">
-                <div class="trust-item">
-                    <div class="trust-icon"></div>
-                    <h3>Secure & Private</h3>
-                    <p>Your data is protected with top-tier encryption.</p>
-                </div>
-                <div class="trust-item">
-                    <div class="trust-icon"></div>
-                    <h3>U.S. Based</h3>
-                    <p>Reliable offers from trusted American companies.</p>
-                </div>
-                <div class="trust-item">
-                    <div class="trust-icon"></div>
-                    <h3>Fast Payouts</h3>
-                    <p>Get your rewards without delays.</p>
-                </div>
-            </div>
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>Discover the Most Anticipated Mobile Experiences of 2026</h1>
+          <hr class="gold-divider">
+          <p class="subhead">Join an exclusive community of users. Designed for those who demand more.</p>
+          <div style="margin-top: 36px;">
+            <a href="https://hubverify.com/cl/?o=69a3cddd391de" class="btn-gold" id="hero-cta">Explore Now <i class="fas fa-arrow-right" style="margin-left: 8px;"></i></a>
+          </div>
         </div>
+        <div class="hero-mockup">
+          <div class="device-mockup">
+            <div class="device-screen" role="img" aria-label="Mobile app interface screenshot"></div>
+            <div class="reflection"></div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="benefits-section">
-        <div class="container">
-            <h2>Benefits You'll Love</h2>
-            <div class="benefits-list">
-                <div class="benefit-item">
-                    <h3>Easy Earnings</h3>
-                    <p>Complete offers from home and earn real cash or gift cards.</p>
-                </div>
-                <div class="benefit-item">
-                    <h3>Flexible Schedule</h3>
-                    <p>Work whenever it suits you  no commitments needed.</p>
-                </div>
-                <div class="benefit-item">
-                    <h3>Variety of Offers</h3>
-                    <p>Choose from surveys, trials, and more that match your interests.</p>
-                </div>
-                <div class="benefit-item">
-                    <h3>Community Approved</h3>
-                    <p>Join thousands of satisfied U.S. users.</p>
-                </div>
+    <!-- Demo Visual Section -->
+    <section class="demo">
+      <div class="container">
+        <h2 class="section-title gold">See What's Possible</h2>
+        <div class="demo-grid">
+          <div class="demo-card">
+            <div class="demo-image">
+              <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Mobile gaming session" loading="lazy">
             </div>
+            <div class="demo-caption">immersive gameplay</div>
+          </div>
+          <div class="demo-card">
+            <div class="demo-image">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Analytics dashboard on smartphone" loading="lazy">
+            </div>
+            <div class="demo-caption">real‑time utility</div>
+          </div>
+          <div class="demo-card">
+            <div class="demo-image">
+              <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Video streaming on mobile" loading="lazy">
+            </div>
+            <div class="demo-caption">cinematic clarity</div>
+          </div>
         </div>
+        <p class="demo-caption" style="margin-top: 32px; font-size: 1.2rem;">Intuitive design. Fluid performance.</p>
+      </div>
     </section>
 
-    <section class="how-section">
-        <div class="container">
-            <h2>How It Works</h2>
-            <div class="steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h3>Sign Up</h3>
-                    <p>Click to create your free account in seconds.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h3>Complete Offers</h3>
-                    <p>Pick and finish simple tasks or surveys.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h3>Receive Rewards</h3>
-                    <p>Get paid via PayPal, gift cards, or direct deposit.</p>
-                </div>
-            </div>
+    <!-- Features -->
+    <section class="features">
+      <div class="container">
+        <h2 class="section-title gold">Engineered for excellence</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-gamepad"></i></div>
+            <h3>Immersive Gameplay</h3>
+            <p>Cinema-quality graphics and fluid performance</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+            <h3>Optimized Performance</h3>
+            <p>Lightweight architecture, minimal battery impact</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-cloud-download-alt"></i></div>
+            <h3>Offline Capability</h3>
+            <p>Full functionality without internet connection</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+            <h3>Enterprise-Grade Security</h3>
+            <p>Your privacy, protected</p>
+          </div>
         </div>
+      </div>
     </section>
 
-    <section class="social-proof">
-        <div class="container">
-            <h2>What Our Users Say</h2>
-            <div class="testimonial">
-                <p>"This is the easiest way I've found to make extra money. Payouts are quick and reliable!"</p>
-                <p><strong>- Sarah from Texas</strong></p>
-            </div>
-            <div class="testimonial">
-                <p>"Love the variety of offers. It's fun and rewarding without any hassle."</p>
-                <p><strong>- Mike from California</strong></p>
-            </div>
-            <div class="testimonial">
-                <p>"Trustworthy platform with great support. Highly recommend for anyone in the U.S."</p>
-                <p><strong>- Emily from New York</strong></p>
-            </div>
+    <!-- How It Works -->
+    <section class="how-it-works">
+      <div class="container">
+        <h2 class="section-title gold">How It Works</h2>
+        <div class="steps">
+          <div class="step">
+            <div class="step-number">01.</div>
+            <p>Click the button below</p>
+          </div>
+          <div class="step">
+            <div class="step-number">02.</div>
+            <p>Install on your Android or iOS device</p>
+          </div>
+          <div class="step">
+            <div class="step-number">03.</div>
+            <p>Unlock the full experience</p>
+          </div>
         </div>
+      </div>
     </section>
 
-    <section class="final-cta">
-        <div class="container">
-            <h2>Ready to Start Earning Today?</h2>
-            <a href="https://singingfiles.com/show.php?l=0&u=2466185&id=69081" class="cta-button">Claim Your Spot</a>
-        </div>
+    <!-- Why Choose Us -->
+    <section class="why-choose">
+      <div class="container">
+        <h2 class="section-title gold">Why Choose Us</h2>
+        <ul class="why-list">
+          <li><i class="fas fa-star"></i> Curated selection of top-rated apps</li>
+          <li><i class="fas fa-sync-alt"></i> Regular updates and new releases</li>
+          <li><i class="fas fa-headset"></i> 24/7 priority support</li>
+        </ul>
+      </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Earn Rewards Easily. All rights reserved. Privacy Policy | Terms of Service</p>
+    <!-- Trust & Verification -->
+    <section class="trust">
+      <div class="container" style="text-align: center;">
+        <div class="trust-emblem">👑 50,000+ Verified Global Members</div>
+        <div class="trust-icons">
+          <div><i class="fas fa-shield-alt"></i> <span>Privacy</span></div>
+          <div><i class="fas fa-check-circle"></i> <span>Verified</span></div>
+          <div><i class="fas fa-globe"></i> <span>Global</span></div>
+          <div><i class="fas fa-star"></i> <span>Rated</span></div>
         </div>
-    </footer>
+        <p class="micro-text">Trusted by users across 40+ countries</p>
+      </div>
+    </section>
+
+    <!-- Call-to-Action -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-box">
+          <h2>Ready to elevate your mobile experience?</h2>
+          <a href="https://hubverify.com/cl/?o=69a3cddd391de" class="btn-gold" id="final-cta">Get Started <i class="fas fa-arrow-right"></i></a>
+         
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+      <div class="container">
+        <h2 class="section-title gold">Frequently Asked</h2>
+        <div class="faq-item">
+          <details>
+            <summary>Is this application complimentary?</summary>
+            <div class="faq-answer">Yes, with optional premium enhancements available.</div>
+          </details>
+        </div>
+        <div class="faq-item">
+          <details>
+            <summary>Device compatibility?</summary>
+            <div class="faq-answer">Works with all major Android and iOS devices (iPhone, iPad, Samsung, Google Pixel, etc).</div>
+          </details>
+        </div>
+        <div class="faq-item">
+          <details>
+            <summary>Data privacy?</summary>
+            <div class="faq-answer">We maintain the highest standards of data protection – end‑to‑end encryption, no logs policy.</div>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-copy">© 2026 MAKING MONEY · GOLD EDITION</div>
+      <div class="disclaimer">
+        This site contains various affiliate links. I get paid a commission when you purchase items through my links.
+      </div>
+    
+    </div>
+  </footer>
 </body>
 </html>
